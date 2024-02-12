@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # uses GitHub's checkout action to checkout code form the master branch
-      - uses: actions/setup-dotnet@v4.0.0
+      - uses: actions/checkout@v4.1.1
 
       # sets up .NET Core SDK
       - name: Publish
