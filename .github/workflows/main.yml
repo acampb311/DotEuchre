@@ -11,7 +11,10 @@ jobs:
     steps:
       # uses GitHub's checkout action to checkout code form the master branch
       - uses: actions/checkout@v4.1.1
-
+      
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v4.0.0
+      
       # sets up .NET Core SDK
       - name: Publish
         run: dotnet publish DotEuchre.csproj -c Release -o release --nologo
