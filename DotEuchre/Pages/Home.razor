@@ -1,0 +1,61 @@
+﻿@page "/"
+
+@using System.Text
+@* @inherits LayoutComponentBase *@
+<FluentStack Container Style="background-color: var(--neutral-layer-1);" Orientation="Orientation.Vertical" Width="100%">
+    <FluentSpacer />
+
+    <!-- Row 0 -->
+    <FluentStack Orientation="Orientation.Horizontal">
+        <!-- 0,0 Filler-->
+        <FluentStack />
+
+        <!-- 0,1 Top Player-->
+        <FluentStack Orientation="Orientation.Horizontal">
+            <FluentCard>Card number 1</FluentCard>
+            <FluentCard>Card number 2</FluentCard>
+        </FluentStack>
+
+        <!-- 0,2 Filler-->
+        <FluentStack />
+    </FluentStack>
+    <FluentSpacer />
+
+    <!-- Row 1 -->
+    <FluentStack Orientation="Orientation.Horizontal">
+        <!-- 1,0 Left Player-->
+        <FluentStack Orientation="Orientation.Vertical">
+            <FluentCard>Card number 1</FluentCard>
+            <FluentCard>Card number 2</FluentCard>
+        </FluentStack>
+
+        <!-- 1,1 Main Card Stack-->
+        <FluentStack Orientation="Orientation.Horizontal">
+            <FluentCard>Card number 1</FluentCard>
+            <FluentCard>Card number 2</FluentCard>
+        </FluentStack>
+
+        <!-- 1,2 Right Player-->
+        <FluentStack Orientation="Orientation.Vertical">
+            <FluentCard>Card number 1</FluentCard>
+            <FluentCard>Card number 2</FluentCard>
+        </FluentStack>
+    </FluentStack>
+    <FluentSpacer />
+
+    <!-- Row 2 -->
+    <FluentStack Orientation="Orientation.Horizontal">
+        <!-- 2,0 Filler-->
+        <FluentStack />
+
+        <!-- 2,1 Bottom Player-->
+        <FluentStack Orientation="Orientation.Horizontal">
+            <FluentCard>Card number 1</FluentCard>
+            <FluentCard>Card number 2</FluentCard>
+        </FluentStack>
+
+        <!-- 2,2 Filler-->
+        <FluentStack />
+    </FluentStack>
+</FluentStack>
+<FluentSpacer />
